@@ -1,0 +1,161 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #fafafa;
+  color: #333;
+  line-height: 1.6;
+}
+
+header {
+  background-color: #2C3E50;
+  color: white;
+  text-align: center;
+  padding: 2em 1em;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 1.5em;
+  margin-top: 1em;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+  color: #1ABC9C;
+}
+
+/* Section Styling */
+.section {
+  padding: 3em 1em;
+  text-align: center;
+}
+
+.section h2 {
+  color: #2C3E50;
+  margin-bottom: 1em;
+}
+
+/* Services */
+.services {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.5em;
+}
+
+.card {
+  background: white;
+  width: 250px;
+  padding: 1.5em;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* Portfolio Grid */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1em;
+}
+
+.grid .item {
+  background: #1ABC9C;
+  color: white;
+  padding: 2em;
+  border-radius: 10px;
+}
+
+.item:hover {
+  background: #407469;
+}
+
+/* Contact Form */
+form {
+  max-width: 400px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+input, textarea {
+  padding: 0.8em;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-family: inherit;
+}
+
+input:focus, textarea:focus {
+  border-color: #1ABC9C;
+  outline: none;
+}
+
+button {
+  background-color: #1ABC9C;
+  color: white;
+  border: none;
+  padding: 0.8em;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background-color: #16A085;
+}
+
+/* Footer */
+footer {
+  background-color: #2C3E50;
+  color: white;
+  text-align: center;
+  padding: 1em;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .services {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* Section Separation Enhancements */
+.section {
+  padding: 4em 1em;
+  border-bottom: 3px solid black;
+}
+
+.section:nth-of-type(even) {
+  background-color: #cccccc;
+}
+
+.section:nth-of-type(odd) {
+  background-color: #fef3f3;
+}
+
+.divider {
+  border: none;
+  width: 70%;
+  margin: 2em auto;
+}
+
